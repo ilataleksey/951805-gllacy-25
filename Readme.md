@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Алексей Илатовский](https://up.htmlacademy.ru/htmlcss/25/user/951805).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Корякин](https://htmlacademy.ru/profile/alexeycorr).
 
 ---
 
