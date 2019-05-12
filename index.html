@@ -23,7 +23,7 @@
       </nav>
       <p class="header-info">
         <span class="working-time">С 10 до 20, ежедневно</span>
-        <a class="phone-number" href="#">8 812 450-25-25</a>
+        <a class="phone" href="tel:88124502525">8 812 450-25-25</a>
       </p>
     </header>
     <main>
@@ -31,18 +31,96 @@
       <h1 class="visually-hidden">Интернет-магазин мороженого Глейси</h1>
 
       <section class="slider">
-        <h2 class="visually-hidden">Слайдер</h2>
         <!-- Здесь будет слайдер -->
+        <h2 class="visually-hidden">Слайдер</h2>
+        <p class="slider-lead">Крем-брюле и пломбир с малиновым джемом</p>
+        <a class="button slider-button" href="#">Давайте оба!</a>
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+        </div>
+        <div class="slider-slides">
+          <img src="img/slider-slide-1.jpg" alt="Крем-брюле и пломбир с малиновым джемом">
+          <img src="img/slider-slide-2.jpg" alt="Слайд-2">
+          <img src="img/slider-slide-3.jpg" alt="Слайд-3">
+        </div>
       </section>
 
       <section class="promotion">
-        <h2 class="visually-hidden">Промо акции</h2>
         <!-- Здесь будут акции -->
+        <h2 class="visually-hidden">Промо акции</h2>
+        <div class="promotion-1">
+          <p class="promotion-lead">Малинка даром!</p>
+          <p class="promotion-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <a class="button promotion-button" href="#">Хочу варенье!</a>
+        </div>
+        <div class="promotion-2">
+          <p class="promotion-lead">Шоколадки даром!</p>
+          <p class="promotion-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+          <a class="button promotion-button" href="#">Хочу шоколадки!</a>
+        </div>
       </section>
 
       <section class="hits">
         <h2 class="visually-hidden">Хиты продаж</h2>
-        <!-- Здесь будут хиты продаж -->
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <h3>
+              <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            </h3>
+            <div class="catalog-item-price">
+              <p class="price">
+                310 ₽<span class="weight">/кг</span>
+              </p>
+              <a href="#">
+                <img src="img/product-hit-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              </a>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <h3>
+              <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+            </h3>
+            <div class="catalog-item-price">
+              <p class="price">
+                380 ₽<span class="weight">/кг</span>
+              </p>
+              <a href="#">
+                <img src="img/product-hit-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+              </a>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <h3>
+              <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            </h3>
+            <div class="catalog-item-price">
+              <p class="price">
+                355 ₽<span class="weight">/кг</span>
+              </p>
+              <a href="#">
+                <img src="img/product-hit-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              </a>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <h3>
+              <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+            </h3>
+            <div class="catalog-item-price">
+              <p class="price">
+                415 ₽<span class="weight">/кг</span>
+              </p>
+              <a href="#">
+                <img src="img/product-hit-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+              </a>
+            </div>
+          </li>
+        </ul>
       </section>
 
       <section class="features">
@@ -70,6 +148,18 @@
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <!-- Здесь будут контакты и карта -->
+        <div class="contacts-window">
+          <p>
+            Адрес главного офиса и офлайн-магазина:
+            <span class="contacts-window-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+          </p>
+          <p>
+            Для заказов по телефону:
+            <a class="phone" href="tel:88124502525">8 812 450-25-25</a>
+            (с 10 до 20 ежедневно)
+          </p>
+          <a class="button contacts-button" href="#">Форма обратной связи</a>
+        </div>
       </section>
 
     </main>
@@ -90,10 +180,10 @@
           <li><a href="#">Экологические стандарты</a></li>
         </ul>
       </div>
-      <p class="footer-copyright">
+      <div class="footer-copyright">
         <img src="img/logo-htmlacademy-small.png" width="108" height="39" alt="Логотип HTML Academy">
-        <span>Сделано в <a class="button" href="https://htmlacademy.ru">HTML Academy</a> &#169; 2019</span>
-      </p>
+        <p>Сделано в <a class="button" href="https://htmlacademy.ru">HTML Academy</a> &#169; 2019</p>
+      </div>
     </footer>
   </body>
 </html>
