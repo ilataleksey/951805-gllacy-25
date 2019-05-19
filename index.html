@@ -27,7 +27,7 @@
         <ul class="user-navigation">
           <li class="search">
             <a class="visually-hidden" href="search.html">Поиск</a>
-            <div class="modul modul-search">
+            <div class="modal modal-search">
               <form class="form-search" method="get" action="https://echo.htmlacademy.ru">
                 <p>
                   <label class="visually-hidden" for="search">
@@ -40,7 +40,7 @@
           </li>
           <li class="login-link">
             <a href="login.html">Вход</a>
-            <div class="modul modul-login">
+            <div class="modal modal-login">
               <form class="form-login" method="post" action="https://echo.htmlacademy.ru">
                 <p>
                   <label class="visually-hidden" for="user-email">
@@ -116,55 +116,59 @@
         <h2 class="visually-hidden">Хиты продаж</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
+            <img src="img/product-hit-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <p class="price">
+              310 ₽<span class="weight">/кг</span>
+            </p>
             <a href="#">
               <h3>
                 Сливочное с апельсиновым джемом и цитрусовой стружкой
               </h3>
             </a>
-            <p class="price">
-              310 ₽<span class="weight">/кг</span>
-            </p>
-            <a href="#">
-              <img src="img/product-hit-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <a class="button catalog-button" href="">
+              Быстрый просмотр
             </a>
           </li>
           <li class="catalog-item">
+            <img src="img/product-hit-2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+            <p class="price">
+              380 ₽<span class="weight">/кг</span>
+            </p>
             <a href="#">
               <h3>
                 Сливочно-кофейное с кусочками шоколада
               </h3>
             </a>
-            <p class="price">
-              380 ₽<span class="weight">/кг</span>
-            </p>
-            <a href="#">
-              <img src="img/product-hit-2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+            <a class="button catalog-button" href="">
+              Быстрый просмотр
             </a>
           </li>
           <li class="catalog-item">
+            <img src="img/product-hit-3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <p class="price">
+              355 ₽<span class="weight">/кг</span>
+            </p>
             <a href="#">
               <h3>
                 Сливочно-клубничное с присыпкой из белого шоколада
               </h3>
             </a>
-            <p class="price">
-              355 ₽<span class="weight">/кг</span>
-            </p>
-            <a href="#">
-              <img src="img/product-hit-3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <a class="button catalog-button" href="">
+              Быстрый просмотр
             </a>
           </li>
           <li class="catalog-item">
+            <img src="img/product-hit-4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+            <p class="price">
+              415 ₽<span class="weight">/кг</span>
+            </p>
             <a href="#">
               <h3>
                 Сливочное крем-брюле с карамельной подливкой
               </h3>
             </a>
-            <p class="price">
-              415 ₽<span class="weight">/кг</span>
-            </p>
-            <a href="#">
-              <img src="img/product-hit-4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+            <a class="button catalog-button" href="">
+              Быстрый просмотр
             </a>
           </li>
         </ul>
@@ -200,7 +204,7 @@
 
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <img src="img/map.jpg" alt="Адрес офлайн магазина: город Санкт-Петербург, улица Большая Конюшенная 19/8">
+        <img src="img/map.jpg" width="1250" height="430" alt="Адрес офлайн магазина: город Санкт-Петербург, улица Большая Конюшенная 19/8">
         <div class="contacts-window">
           <p>
             Адрес главного офиса и офлайн-магазина:
@@ -239,9 +243,9 @@
       </div>
     </footer>
 
-    <section class="modul modul-callback">
+    <section class="modal modal-callback">
       <h2 class="visually-hidden">Форма обратной связи</h2>
-      <p class="modul-callback-lead">Мы обязательно вам ответим!</p>
+      <p class="modal-callback-lead">Мы обязательно вам ответим!</p>
       <form class="form-callback" method="post" action="https://echo.htmlacademy.ru">
         <p>
           <label class="visually-hidden" for="user-name">
@@ -263,7 +267,7 @@
         </p>
         <button class="button callback-button callback-button-send" type="submit">Отправить</button>
       </form>
-      <button class="button callback-button callback-button-close" type="button">Закрыть</button>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
   </body>
 </html>
