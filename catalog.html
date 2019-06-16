@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Каталог</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/min-style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="inner-page">
   <div class="container">
@@ -88,7 +88,7 @@
             </a>
             <div class="modal modal-basket">
               <table class="basket-table">
-                <tr>
+                <tr class="basket-table-row">
                   <td class="basket-table-cell botton-cell">
                     <button class="modal-close delete-button" type="button" aria-label="Удалить"></button>
                   </td>
@@ -106,7 +106,7 @@
                     <span>300 руб.</span>
                   </td>
                 </tr>
-                <tr>
+                <tr class="basket-table-row">
                   <td class="basket-table-cell botton-cell">
                     <button class="modal-close delete-button" type="button" aria-label="Удалить"></button>
                   </td>
@@ -171,8 +171,8 @@
               <div class="filter-range-container">
                 <div class="range-main-line">
                   <div class="range-inner-line">
-                    <button class="button-range button-min-range" type="button"></button>
-                    <button class="button-range button-max-range" type="button"></button>
+                    <button class="button-range button-min-range" type="button" aria-label="min-price-slider"></button>
+                    <button class="button-range button-max-range" type="button" aria-label="max-price-slider"></button>
                   </div>
                 </div>
               </div>
@@ -377,13 +377,13 @@
           </ul>
 
           <ul class="paginator-list">
-            <li class="paginator-item"><a class="paginator-link paginator-previous">&#60;</a></li>
+            <li class="paginator-item"><a class="paginator-link" aria-label="previous-catalog-list"></a></li>
             <li class="paginator-item paginator-current"><a class="paginator-link">1</a></li>
             <li class="paginator-item"><a class="paginator-link" href="#2">2</a></li>
             <li class="paginator-item"><a class="paginator-link" href="#3">3</a></li>
             <li class="paginator-item"><a class="paginator-link" href="#4">4</a></li>
             <li class="paginator-item"><a class="paginator-link" href="#5">5</a></li>
-            <li class="paginator-item"><a class="paginator-link paginator-next" href="#next">&#62;</a></li>
+            <li class="paginator-item"><a class="paginator-link paginator-next" href="#next" aria-label="next-catalog-list"></a></li>
           </ul>
         </section>
 
