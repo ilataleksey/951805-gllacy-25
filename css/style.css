@@ -150,7 +150,7 @@ a {
 .catalog-navigation {
   position: absolute;
   top: 36px;
-  left: 0;
+  left: -5px;
   z-index: 100;
 
   display: none;
@@ -158,7 +158,7 @@ a {
   width: 143px;
 
   margin: 0;
-  padding: 6px 9px 2px 6px;
+  padding: 6px 9px 3px 6px;
 
   font-size: 14px;
   line-height: 16px;
@@ -172,12 +172,13 @@ a {
 
 .catalog-navigation-item {
   padding-bottom: 4px;
+  padding-left: 5px;
 }
 
 .catalog-navigation-link {
   display: block;
 
-  margin: 0 -9px 0 -6px;
+  margin: 0 -9px 0 -11px;
   padding: 5px 0 6px 15px;
 
   color: #323232;
@@ -193,7 +194,10 @@ a {
   border-bottom: 1px solid #d1d0ce;
 }
 
-.site-navigation-item:hover .catalog-navigation,
+.site-navigation-item:hover .catalog-navigation {
+  display: block;
+}
+
 .site-navigation-item:focus-within .catalog-navigation {
   display: block;
 }
@@ -307,7 +311,7 @@ a {
 }
 
 .modal-basket {
-  padding: 15px 15px 18px 15px;
+  padding: 18px 15px 15px 13px;
 
   width: 540px;
 
@@ -383,13 +387,13 @@ a {
           transform: translateY(-50%);
 
   margin-left: -239px;
-  padding: 18px 24px 27px 24px;
+  padding: 16px 24px 20px 24px;
 
   width: 477px;
 
   color: #323232;
 
-  border-radius: 6px;
+  border-radius: 10px;
 }
 
 .overlay {
@@ -523,7 +527,7 @@ a {
 
 .modal-callback input,
 .modal textarea {
-  width: 241px;
+  width: 266px;
   height: 44px;
 
   padding: 9px 14px;
@@ -672,7 +676,8 @@ a {
 }
 
 .callback-button-container {
-  margin-top: 25px;
+  margin-top: 17px;
+  margin-bottom: 8px;
 
   text-align: end;
 }
@@ -680,8 +685,8 @@ a {
 .modal-close {
   position: absolute;
   
-  top: -3px;
-  right: -7px;
+  top: -5px;
+  right: -10px;
   
   width: 22px;
   height: 22px;
@@ -909,7 +914,15 @@ a {
   margin-right: 0;
 }
 
-.catalog-item:hover,
+.catalog-item:hover {
+  z-index: 1;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+}
+
 .catalog-item:focus-within {
   z-index: 1;
 
@@ -989,7 +1002,10 @@ a {
   line-height: 24px;
 }
 
-.catalog-item:hover .catalog-button,
+.catalog-item:hover .catalog-button {
+  visibility: visible;
+}
+
 .catalog-item:focus-within .catalog-button {
   visibility: visible;
 }
@@ -1219,10 +1235,18 @@ a {
   min-height: 430px;
 }
 
+.contacts iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
 .contacts-window {
   position: absolute;
   top: 60px;
   right: 27px;
+  z-index: 3;
 
   display: -webkit-box;
 
@@ -1419,9 +1443,14 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+
   margin: 0;
   margin-bottom: 5px;
   padding: 0;
+
+  width: 879px;
 
   font-size: 14px;
   line-height: 16px;
@@ -1483,6 +1512,9 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container {
@@ -1506,7 +1538,10 @@ a {
   padding-bottom: 5px;
 }
 
-.user-navigation-item:hover .modal,
+.user-navigation-item:hover .modal {
+  display: block;
+}
+
 .user-navigation-item:focus-within .modal {
   display: block;
 }
@@ -1566,6 +1601,8 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 
   margin-right: 26px;
 
@@ -1581,6 +1618,8 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 
   margin: 0;
   margin-right: 26px;
@@ -1620,6 +1659,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1627,8 +1668,12 @@ a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 
   margin-left: auto;
+
+  max-width: 267px;
 }
 
 .footer-copyright-text {
@@ -1686,6 +1731,10 @@ a {
   font-weight: 700;
 }
 
+.slider-lead-shorter {
+  width: 650px;
+}
+
 .slider-controls {
   position: absolute;
   top: 446px;
@@ -1710,6 +1759,10 @@ a {
   background-color: transparent;
 
   cursor: pointer;
+}
+
+.slider-controls label:hover {
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .slider-item {
@@ -1807,11 +1860,26 @@ a {
 }
 
 .basket-table-cell {
-  padding: 5px 0px 15px 0;
+  padding-top: 10px;
+  padding-right: 4px;
+  padding-bottom: 15px;
+
+  vertical-align: top;
+}
+
+.image-cell {
+  padding-top: 0;
+  padding-right: 0px;
 }
 
 .text-cell {
+  padding-right: 3px;
+
   width: 230px;
+}
+
+.table-price {
+  padding-right: 0px;
 }
 
 .table-price,
@@ -1906,6 +1974,24 @@ a {
           appearance: none;
 }
 
+.filter-select:::-ms-expand {
+  display: none;
+}
+
+.filter-select option {
+  font: inherit;
+  font-weight: 400;
+
+  background-color: #ffffff;
+}
+
+.filter-select option:hover,
+..filter-select option:focus {
+  color: #ffffff;
+
+  background-color: #1e90ff;
+}
+
 .filter-form label {
   font-size: 16px;
   line-height: 18px;
@@ -1915,7 +2001,12 @@ a {
 
 .filter-select:hover,
 .filter-select:focus,
-.filter-select-container:hover::after,
+.filter-select-container:hover::after {
+  color: #323232;
+
+  border-top-color: #323232;
+}
+
 .filter-select-container:focus-within::after {
   color: #323232;
 
@@ -2044,8 +2135,8 @@ a {
 
 .filter-buttom:active {
   background-color: #ededed;
-  -webkit-box-shadow: 0 -2px 1px 0 #696969;
-          box-shadow: 0 -2px 1px 0 #696969;
+  -webkit-box-shadow: inset 0 2px 1px 0 #696969;
+          box-shadow: inset 0 2px 1px 0 #696969;
 }
 
 .filter-option label {
@@ -2158,6 +2249,7 @@ a {
 .paginator-link[href] {
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   color: #ffffff;
 }
 
@@ -2180,6 +2272,28 @@ a {
   color: #323232;
 
   background-color: #ffffff;
+}
+
+.paginator-item:first-child,
+.paginator-item:last-child {
+  margin-left: 17px;
+
+  background-image: url('../img/pagination.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.paginator-item:first-child {
+  margin-left: 0;
+  margin-right: 15px;
+
+  opacity: 0.2;
+
+  -webkit-transform: rotate(180deg);
+
+      -ms-transform: rotate(180deg);
+
+          transform: rotate(180deg);
 }
 
 .paginator-next {
