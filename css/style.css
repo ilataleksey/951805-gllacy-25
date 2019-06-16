@@ -960,13 +960,13 @@ a {
   text-align: center;
 }
 
-.catalog-item-title a {
+.catalog-item-link {
   color: #ffffff;
   text-decoration: underline;
 }
 
-.catalog-item-title a:hover,
-.catalog-item-title a:focus {
+.catalog-item-link:hover,
+.catalog-item-link:focus {
   color: #ffbc9e;
 }
 
