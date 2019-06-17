@@ -194,7 +194,8 @@ a {
   border-bottom: 1px solid #d1d0ce;
 }
 
-.site-navigation-item:hover .catalog-navigation {
+.site-navigation-item:hover .catalog-navigation,
+.site-navigation-link:focus ~ .catalog-navigation {
   display: block;
 }
 
@@ -679,7 +680,7 @@ a {
   margin-top: 17px;
   margin-bottom: 8px;
 
-  text-align: end;
+  text-align: right;
 }
 
 .modal-close {
@@ -1538,7 +1539,8 @@ a {
   padding-bottom: 5px;
 }
 
-.user-navigation-item:hover .modal {
+.user-navigation-item:hover .modal,
+.user-navigation-link:focus ~ .modal {
   display: block;
 }
 
@@ -1974,7 +1976,7 @@ a {
           appearance: none;
 }
 
-.filter-select:::-ms-expand {
+.filter-select::-ms-expand {
   display: none;
 }
 
