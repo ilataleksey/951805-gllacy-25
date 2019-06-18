@@ -1988,7 +1988,7 @@ a {
 }
 
 .filter-select option:hover,
-..filter-select option:focus {
+.filter-select option:focus {
   color: #ffffff;
 
   background-color: #1e90ff;
